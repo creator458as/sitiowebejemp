@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #000;
+}
+.navbar-brand {
+    color: #ffc107;
+    font-weight: bold;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.header {
+    background: url('https://via.placeholder.com/1366x654') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.header-content {
+    z-index: 2;
+}
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.btn-custom {
+    background-color: #ffc107;
+    border: none;
+    color: black;
+}
+.btn-custom:hover {
+    background-color: #e0a800;
+}
+.services {
+    padding: 60px 0;
+}
+.service-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.service-card .card-body {
+    background: linear-gradient(135deg, #ffc107, #ffdf7e);
+    color: #333;
+    padding: 30px;
+}
+.service-card h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+</style>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ejemplo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">UNFINITY+</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+            </ul>
+            <button class="btn btn-custom ms-3">Request Quote</button>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Services Section -->
+<section id="services" class="services bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Nuestros Servicios</h2>
+            <p class="text-muted">Conoce todo lo que ofrecemos para satisfacer tus necesidades industriales.</p>
+        </div>
+        <div class="row gy-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Consultoría Técnica</h5>
+                        <p class="card-text">Asesoramiento experto para proyectos industriales personalizados.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Suministro de Productos</h5>
+                        <p class="card-text">Proveemos productos industriales de alta calidad y confiabilidad.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Instalación y Mantenimiento</h5>
+                        <p class="card-text">Ofrecemos soporte técnico para instalación y mantenimiento.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Capacitación</h5>
+                        <p class="card-text">Capacitamos a tu personal para un uso eficiente de nuestros productos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
